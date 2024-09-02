@@ -1,4 +1,4 @@
-<tempalte>
+<template>
 <div v-if="menuErr">
     <span> 菜单加载失败：没有返回任何菜单数据  </span>
 </div>
@@ -14,7 +14,7 @@
 </div>
 
 
-</tempalte>
+</template>
 <script lang="ts" setup>
 import {ref} from "vue";
 
@@ -29,5 +29,6 @@ const collapse = ref<Boolean>(false);
     overflow: auto;
     display: flex;
     flex-direction: column;
+    background-color: aliceblue;
 }
 </style>
